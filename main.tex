@@ -1,0 +1,388 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%                                                       %
+%                  Copyright (C) 2024 by:               %
+%                                                       %
+%                     Erivando Sena                     %
+%                <erivandosena@gmail.com>               %
+%                                                       %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%                                                       %
+% This work may be distributed and/or modified under    %
+% the conditions of the LaTeX Project Public License,   %
+% either version 1.3 of this license or (at your        %
+% option) any later version.                            %
+% The latest version of this license is in              %
+% http://www.latex-project.org/lppl.txt                 %
+% and version 1.3 or later is part of all               %
+% distributions of LaTeX version 2005/12/1 or later.    %
+%                                                       %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass[twocolumn]{article}
+\usepackage[a4paper, margin=1in]{geometry}
+\usepackage{graphicx}
+\usepackage{titlesec}
+\usepackage{titling}
+\usepackage{abstract}
+\usepackage{adjustbox}
+\usepackage{everypage}
+\usepackage{fancyhdr}
+\usepackage{lastpage}
+\usepackage{hyperref}
+\usepackage{tikz} % For absolute positioning
+
+% Define the title and author of the paper
+\title{How To Get a Ph.D. and Have a Life, Too}
+\author{Richard E. Baker}
+\date{July 1997 \\\textit{Volume 29, Number 3, SIGCHI Bulletin}}
+
+% Define the abstract text
+\renewcommand{\abstractname}{}
+\renewcommand{\absnamepos}{empty}
+
+% Define the column separation and line width
+\setlength{\columnsep}{0.5in}
+\setlength{\columnseprule}{0.2pt}
+
+% Define title and section formatting
+\titleformat{\section}{\bfseries\large}{\thesection}{1em}{}
+\titleformat{\subsection}{\bfseries}{\thesubsection}{1em}{}
+\pretitle{\begin{center}\LARGE\bfseries}
+\posttitle{\par\end{center}\vskip 0.5em}
+\preauthor{\begin{center}\large}
+\postauthor{\par\end{center}}
+\predate{}
+\postdate{}
+
+% Define the header and footer
+\pagestyle{fancy}
+\fancyhf{} % Clean cabeçalho and rodapé
+\fancyhead{}
+\fancyfoot{}
+\fancyhead[C]{\textit{Volume 29, Number 3, SIGCHI Bulletin}}
+\fancyfoot[C]{\thepage}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Setup rodapé na última página
+\fancypagestyle{lastpage}{
+  \fancyfoot[C]{%
+      \raisebox{-1ex}{\hspace{0cm} \thepage}%
+      \\
+      \raisebox{-1ex}{ \href{https://github.com/erivandosena/phd-and-life-latex} {\LaTeX\ Version By: Erivando Sena}}%
+  }
+}
+
+% Apply estilo na última página
+\pagestyle{fancy}
+\AtEndDocument{\thispagestyle{lastpage}}
+
+\begin{document}
+
+\maketitle
+
+% \begin{abstract}
+% \noindent Texto do abstract aqui.
+% \end{abstract}
+
+
+% Add the "Students" no cabeçalho da primeira página
+\AddEverypageHook{%
+  \ifnum\value{page}=1%
+    \begin{tikzpicture}[remember picture,overlay]
+      \node[anchor=north west,rotate=90,font=\fontsize{55}{60}\selectfont\bfseries,text depth=0pt]
+      at ([xshift=0.8cm,yshift=-15.8cm]current page.north west) {Students};
+    \end{tikzpicture}
+  \fi
+}
+
+% The rest of your document goes here
+% \section*{Introductin}
+\noindent
+Did you ever wonder how you can get more done in less time? How can you get your
+assignments completed, meet with your study group, spend time on research,
+complete the exercises, write the required papers before the deadline, and
+continue to develop your dissertation? Where will you find time for your job with
+all the necessary courses, research, and documentation? If you have a family, how
+will you fit time for your spouse, children, and home life into your already busy
+schedule? Where do you find the time for shopping, cleaning, fixing, running, and
+most importantly, time with the children? Lastly, how will you possibly be able
+to relax and get some rest?
+
+\section*{Time Masters}
+\noindent
+After many years of observing individuals in industry and academia who have
+successfully mastered the art of time management, the author wished to share with
+other students some of the more effective techniques. The one covered here is a
+combination of the most commonly used techniques. The central theme of success for
+time masters is the ability to juggle the many demands on their time with the
+limited time in their schedules.
+
+Everything we do is a function of time management; whether we schedule it or
+another does. Everything that happens is a function of timing, whether ours,
+someone else's, or just a function of nature. Time is the logical river in which
+we live and it flows continually, unstopped by any dam. It has become a personal
+and psychological medium within which each of us experiences our own internal
+time and an external time imposed by society, schedules, deadlines, work, and
+academia. (Ventura, 1995). One method by which we can be freed from these demands
+is to withdraw from society to a log cabin in the woods – or we can become adept
+at time management.
+
+\section*{Why Time Management is Important}
+\noindent
+One of the most prevalent, but underestimated, problems for graduate students is
+time management (Quilty, 1996). Demands on one's time seem to increase while the
+available time to accomplish things seems to decrease. The idea, of course, is to
+never let the demands for time become equal to or greater than the time available.
+Occasionally, however, this does happen and your prowess as a time master will be
+tested. Your ability to manage your time will greatly influence your future success
+in academia, industry, and society.
+
+\section*{Factors of Time}
+\noindent
+The pressures to manage time have not always been a factor in society. Before the
+railroads began to run over one hundred years ago, time was not as important as
+it is to people today. Before this, local time in New York did not relate to any
+particular time in Chicago, Los Angeles, Tokyo, or even in London. It was not
+important to have everyone on a coordinated time. (Ventura, 1995). As our society
+has become more industrialized, our focus on time has become more intensified.
+Today, in our technically advanced and networked world community, time is
+essential to the coordination of meetings and events of all kinds.
+Almost everything we do is set to a time schedule. The result: people who feel
+that they are being driven by the schedule instead of setting it. (Nickerson, 1992).
+
+\section*{Getting Control}
+\noindent
+How can you identify yourself as an ineffective time manager? If you experience
+any of the following, you may have time management problems: constant rushing,
+frequent lateness, low productivity, low energy and motivation, frustration with
+schedules or deadlines, impatience, chronic vacillation between alternatives,
+difficulty setting and achieving goals, or procrastination (Covey, 1989).
+Everyone is allocated the same number of hours in a day. Yet how do some people
+feel like 24 hours is not enough while others manage to get their work done and
+still have time left over to enjoy themselves? People who effectively manage
+their time have learned to put a little discipline and structure into their lives.
+They focus most of their time and energy on what is most important to them.
+They minimize the time they spend on activities they see as personally
+unimportant. Essentially, by putting a little structure into their lives,
+they have learned to manage themselves (Covey, 1989) and focus their available
+time on the activities which they see as important. Their greatest tools are
+planning, setting priorities for activities, juggling the demands into an
+overbooked schedule, defeating procrastination, and keeping focus on what is
+important to them.
+
+\section*{The Key is Planning}
+\noindent
+The key to effective time management is planning. This involves a series of goal
+and priority setting. Time planning is an exercise in matching the activities
+you either must accomplish or wish to accomplish with the time you have available.
+The first step is in setting the overall goals and determining the steps or
+activities you need to accomplish to reach the goal. Once the activities are
+identified, priorities can be assigned to each. Then, using the priorities,
+match the sequence of activities to the allotted time in your schedule.
+This allows a managed approach.
+
+Effective time masters use a combination of time plans; short term and long term,
+daily, semester, and academic career. The short term plans should supplement or
+assist the achievement of the long term plans. Then, by focusing their energies
+on the priorities of the tasks in each plan, the larger goals can be met.
+
+Take a few minutes to write down your goals for your academic student career.
+This can probably be stated in one or two sentences. Then, write down your goals
+for each academic period to help achieve your career goal. Then, write down your
+necessary goals or activities for the current academic period in chronological
+order, everything you must accomplish as exercises, assignments, papers, tests.
+Next, write down the activities or goals for the current week. Some of the items
+on the current period list may be included if they fall into this week.
+
+Lastly, write down your goals or activities for the day. This is the first step
+in learning to juggle your time demands. Make sure to include all the tasks you
+need to perform today. Remember to include the family, work, and social events.
+Now, assign times to these tasks.
+
+Obviously, there will be days in which the activities fill more time than is
+available on your timeline. So, one must set priorities: what must be completed;
+what is good to have completed; and what can wait until another day.
+As stated above, concentrate on the important activities and accomplish tasks
+according to priority.
+
+\section*{Setting Priorities}
+\noindent
+Perhaps all your activities are important. No one ever has the ability to do only
+the ones they please. But, which to do first? To help define priorities, review
+each task and decide its manner of importance to you and the urgency with which
+it must be accomplished (Covey, 1994). Then assign the task to one of the
+following priorities: 1, 2 or 3.
+
+A Priority 1 is a task you must accomplish today. It is important to you and it
+is urgent (Covey, 1989). Sometimes, other people will impose these tasks upon you.
+Sometimes they are simply a carry-over from a previous day, but the task’s
+deadline is near. For example, a forgotten assignment that is due; or, your
+spouse cannot pickup the children after work; or, one of the children is ill and
+needs to go to the doctor. Priority 1 tasks must be accommodated into your day
+and often make you feel as if you are in crisis management. Obviously, you should
+work to eliminate Priority 1 tasks from your list whenever possible.
+
+Priority 2 tasks are items that are of greater importance than urgency
+(Covey, 1989). Priority 2 tasks advance you toward your greater goals. They are
+characterized by your planning, balance in your schedule, and discipline toward
+accomplishment. For example, all tasks toward your overall goal of completing
+your dissertation should fall into category 2; plan time for doing your email
+and phone messages; spending time with that special someone in your life or with
+your family, and, vacation is a planned and important activity. The effective
+time manager’s goal is to always work with Priority 2 tasks.
+
+Last is priority 3 tasks. These tasks are usually not important to you; but are
+urgent for someone else. This is the priority where tasks go that are due to a
+lack of planning by someone else. Their lack of planning does not justify an
+emergency for you. Priority 3 tasks are typified by ringing phones with
+solicitors, inane email, and unproductive meetings. Work priority 3 tasks
+into your daily list when you have extra time (maybe never).
+
+\section*{Plan your Daily Schedule}
+\noindent
+One of the best tools is the individual's daily to do list. Write down a list of
+the activities you must accomplish today. This is usually all the items in
+Priority 1. Then, review your list of Priority 2 and 3 tasks. Add any of these
+that must be accomplished today, or for which you have planned time, to the list.
+Next, assign times to the activities and place them in chronological order for
+the day. Assign times by priority and begin compromising with schedule, location,
+importance, and the many other factors with each activity. This planning
+activity is the juggling. The final list becomes the planned timeline for the day.
+
+Review the list for any changes in priority. Priority 1 tasks should not be
+carried over past the completion date; they should be finished. Priority 2 items
+should be on the list and completed by their planned day for accomplishment.
+Consider deleting Priority 3 items from your list when you are sure they will not
+become Priority 1.
+
+\section*{Use a Mind Map}
+\noindent
+The daily list is usually accomplished at the same time of day each day.
+Most time masters do it at the end of the day so they have the evening to review
+the activities in their minds and mentally prepare for the next day. Some do it
+early in the morning so they have the timeline fresh in their minds as they
+begin the day. This is building and using a mind map: a logical view of the
+activities, their sequence, and locations for accomplishment of the next day. It
+helps time managers prepare themselves, prepare their resources, and meet the
+challenges of the busy day just a little more effectively.
+
+The next step is to work your planned schedule. However, the time master is
+always prepared for interruptions or changes (Ventura, 1995).
+
+\section*{Review the Goal Lists}
+\noindent
+Keep the long and short term goal lists you created earlier. The first list,
+your academic student career, should change only slightly before you graduate.
+Major changes will be in research area, not necessarily in major discipline. The
+second list, the academic period list, will change only to reflect your changes
+in study or research. The third list of the current academic period will change
+to reflect any new and important activities you add to your family, social, work,
+or academic calendars. Make sure to plan them appropriately as Priority 2 tasks.
+The weekly list will change more rapidly and will often be dropped after the
+time master becomes comfortable with using the daily lists in conjunction with
+the academic period list. The daily list becomes the action plan to execute the
+larger, multi-week plan of the academic period. Thus, the time master really
+works from two lists, the daily and academic period, and keeps the others as a
+long range planning maps.
+
+\section*{Defeat Procrastination}
+\noindent
+A few simple words about the time manager's greatest enemy: procrastination.
+These simple words are: do it now! Use a few tricks to help yourself stay away
+from the desire to put it off. Schedule nasty jobs for specific times and reward
+yourself upon completion with some special treat. Think about how good it will
+feel to have the job completed instead of dreading to do it; and then having to
+work overtime to complete it. Sometimes, students become overwhelmed by the size
+of the overall job. If the job is too big, break it into manageable pieces.
+Once it is in manageable sizes, the individual parts can be addressed and worked
+into an overall plan of action.
+
+\section*{Help Yourself}
+\noindent
+Ask yourself this question: "Is what I am doing at this time moving me towards
+the accomplishment of my tasks?" If not, stop wasting time on it. Time is a
+renewable resource and is flowing constantly. Why waste this valuable resource
+on things that do not aid you? Keep your focus on activities that truly help you
+accomplish your short-term and long-term goals.
+
+An often overlooked item is one’s prime time of day. Select your prime time of
+best operation, whether it is morning, afternoon, or evening. Use this time to
+your best advantage because it will be your most productive. A time manager
+often utilizes this portion of the day to accomplish most of the tasks on their
+daily list. It will be to your benefit to know when you are most effective.
+
+When possible, set aside dedicated time periods each day to accomplish routine
+activities such as e-mail, study, and time with the family. This allows one to
+focus while keeping routine matters from expanding to fill the entire day.
+
+One of the largest contributors to time management failure is overly aggressive
+planning. Setting overwhelming lists and accomplishing only a small percentage
+of tasks will make you feel depressed and unproductive. Instead, set conservative
+plans so that accomplishing some major percentage of the tasks will allow you
+to feel productive and eager to meet the challenge again the next day. A sense
+of accomplishment helps you to feel in control of your time.
+
+\section*{Flexibility – the Most Important Attribute}
+\noindent
+As everyone knows, no plan is executed without some change. So will be your
+action plans. Effective time masters always allow for change. They build extra
+time into their action plans for unplanned interruptions. As a fact of life,
+everyone has them so you need to plan accordingly. There are always those little
+interruptions such as: your dissertation advisor; the dean called; your family
+has an emergency; or any of a multitude of other events of daily life.
+
+The critical success factor to time management is flexibility. You must be able
+to set goals and priorities; and, then build an execution plan with schedule.
+Secondly, you need to work that plan to the best of your abilities within the
+time you have allotted. Lastly, plan for change. Anticipate that something or
+things will interrupt or cause change in your daily list of tasks. Allow at
+least one half hour for unexpected events and make sure it is part of every
+day’s plan.
+
+A key element of managing the daily plan is the ability to reassess and modify
+your objectives. By periodically reevaluating the plan, deviations can be
+minimized and the successes of the day can be assured. Be flexible and modify
+your plan to still meet your overall objectives. Every day brings you one step
+closer to your goal.
+
+\section*{Conclusion}
+\noindent
+The author offers this article with the hope that other students will benefit
+from the experiences of others who have already joined the ranks of effective
+time managers. The ability to manage one's time and many demands will determine
+the success of the individual in the future, regardless of path. The time master
+is the individual who follows a daily plan; never forgets family or work as a
+major part of that plan; and always allows for interruptions by family, friends,
+and peers at work. A critical source of support, often forgotten by busy
+students during their research, is their family and their friends.
+
+Lastly, remember to: Plan your work. Work your plan. Plan for change.
+
+\section*{About the Author}
+\noindent
+Richard E. Baker is the Manager of Human Factors in Computing at Electronic Data
+Systems Corporation. He is also a doctoral student in the Department of Computer
+and Information Sciences at Nova Southeastern University in Fort Lauderdale,
+FL, USA. His research interest is in the semiotics of information systems.
+Richard can be reached at bakerr@scis.nova.edu or dbaker@mig.eds.com.
+
+% References Section
+\begin{thebibliography}{9}
+  % Add additional references here
+  \bibitem{covey1989} Covey, S. R. (1989). \textit{The Seven Habits of Highly
+  Effective People: Restoring the Character Ethic}. New York, NY: Simon \& Schuster Inc.
+  \bibitem{covey1994} Covey, S.R. (1994). \textit{First Things First: To Live, to
+  Love, to Learn, to Leave a Legacy}. New York, NY: Simon \& Schuster Inc.
+
+  \bibitem{nickerson1992} Nickerson, R.S. (1992). \textit{Looking Ahead: Human
+  Factors Challenges in a Changing World}. Hillsdale, NJ: Lawrence Erlbaum Associates, Publishers.
+
+  \bibitem{quilty1996} Quilty, S.M. (1996, November). Managing time and workload
+  in college: A weight and balance problem. \textit{Flight Training}, 48-49.
+
+  \bibitem{ventura1995} Ventura, M. (1995, January-February). Prisoners of time:
+  The age of interruption. \textit{Networker}, 19-31.
+\end{thebibliography}
+
+\end{document}

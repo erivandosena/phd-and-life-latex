@@ -1,0 +1,50 @@
+# Arquivos auxiliares LaTeX
+*.acn
+*.acr
+*.alg
+*.aux
+*.bbl
+*.blg
+*.dvi
+*.fdb_latexmk
+*.fls
+*.glg
+*.glo
+*.gls
+*.idx
+*.ilg
+*.ind
+*.ist
+*.lof
+*.log
+*.lot
+*.maf
+*.mtc
+*.mtc0
+*.nav
+*.nlo
+*.out
+*.pdfsync
+*.ps
+*.snm
+*.synctex.gz
+*.toc
+*.vrb
+*.xdv
+*.xdy
+
+# Arquivos de imagem e outros que podem ser necessários
+# images/
+
+# Arquivos PDF
+*.pdf
+
+# Arquivos temporários e de sistema
+*~
+._*
+.DS_Store
+
+# Arquivos temporários de tabelas
+tabelas/*.aux
+
+# Outros arquivos ou padrões conforme necessário
